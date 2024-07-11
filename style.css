@@ -11,11 +11,11 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.7);
     transition: background-color 0.5s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    z-index: 1000; /* Ensures the navigation bar stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .prodigy_infotech {
@@ -23,6 +23,7 @@
     color: #fff;
     font-size: 30px;
 }
+
 .prodigy_infotech:hover {
     color: #000;
 }
@@ -45,6 +46,7 @@
     position: relative;
     font-weight: bold;
 }
+
 .scrolled .nav-item {
     color: #000;
 }
@@ -62,14 +64,13 @@
     background: currentColor;
     transition: width 0.3s;
     position: absolute;
-    bottom: -3px; 
+    bottom: -3px;
     left: 0;
 }
 
 .nav-item:hover::after {
     width: 100%;
 }
-/* NAVIGATION-BAR */
 
 /* SECTION */
 #section1, #section2, #section3 {
@@ -80,7 +81,7 @@
     align-items: center;
     padding: 20px;
     text-align: center;
-    font-size: 2em; /* Centered content and font size */
+    font-size: 2em;
     color: #fff;
 }
 
@@ -110,7 +111,6 @@ button:hover {
     background-color: #000;
     color: #fff;
 }
-/* SECTION */
 
 /* SERVICES */
 .services {
@@ -150,7 +150,6 @@ button:hover {
     font-size: 1em;
     color: #666;
 }
-/* SERVICES */
 
 /* FOOTER */
 .footer {
@@ -178,12 +177,12 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap: 20px;
 }
 
 .social-icons a {
     color: white;
-    margin: 10px 0; /* Vertical margin for spacing */
+    margin: 10px 0;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -330,5 +329,41 @@ button:hover {
 
     .service-item p {
         font-size: 0.7em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 400px) {
+    .prodigy_infotech {
+        font-size: 16px;
+    }
+
+    .nav-item {
+        padding: 3px;
+        font-size: 0.65em;
+    }
+
+    #section1, #section2, #section3 {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    .service-item {
+        width: 160px;
+    }
+
+    .service-item h3 {
+        font-size: 0.8em;
+    }
+
+    .service-item p {
+        font-size: 0.6em;
+    }
+
+    button {
+        font-size: 0.8em;
     }
 }
